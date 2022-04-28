@@ -36,7 +36,7 @@ span {
     padding: 0 0 20px 0;
     border: 14px solid #1F1F1F;
     border-radius: 60px;
-    background: linear-gradient(30deg, #fff 67%, #00adff 40%, #00b8ff 0%, #345ca5 100%);
+    background: linear-gradient(30deg, #fff 62%, #00d2ff 40%, #00efff 0%, #005aff 100%);
 }
 
 .inner__top {
@@ -112,7 +112,7 @@ span {
     border: 1px solid #DADADA;
     background-color: #f3f2f2;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: all .4s ease;
 }
 
 .form__span__controller {
@@ -125,5 +125,5 @@ span {
     border: 1px solid #DADADA;
     border-radius: 20px;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: all .4s ease;
 }
