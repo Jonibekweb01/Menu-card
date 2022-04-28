@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #F2F4F8;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0); 
+}
+
+span {
+    display: inline-block;
+}
+
+.inner {
+    width: 350px;
+    padding: 0 0 20px 0;
+    border: 14px solid #1F1F1F;
+    border-radius: 60px;
+    background: linear-gradient(30deg, #fff 67%, #00adff 40%, #00b8ff 0%, #345ca5 100%);
+}
+
+.inner__top {
+    display: flex;
+    width: 130px;
+    height: 18px;
+    background-color: #1F1F1F;
+    border-radius: 0px 0px 11px 11px;
+    margin: 0 auto;
+}
+
+.inner__info {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.inner__title {
+    margin: 20px 0 20px 0;
+    font-size: 19px;
+    color: #fff;
+}
+
+.big__box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.box__img {
+    margin-right: 15px;
+}
+
+.box__title {
+    margin: 0 0 2px 0;
+    font-size: 19px;
+    font-weight: bold;
+    color: #000;
+}
+
+.box__text {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #AEADAF;
+}
+
+.form__input:checked ~ .form__span {
+    background-color: #5288F4;
+    border: 1px solid #5288F4;
+}
+
+.form__input:checked ~ .form__span > .form__span__controller {
+    background-color: #F7F7F7;
+    border: 1px solid #F7F7F7;
+    transform: translateX(25px);
+}
+
+.form__span {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    border-radius: 20px;
+    border: 1px solid #DADADA;
+    background-color: #f3f2f2;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.form__span__controller {
+    position: absolute;
+    bottom: calc(50% - 13px);
+    left: calc(50% - 24px);
+    display: inline-block;
+    width: 25px;
+    height: 26px;
+    border: 1px solid #DADADA;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
