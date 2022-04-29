@@ -32,6 +32,7 @@ span {
 }
 
 .inner {
+    position: relative;
     width: 350px;
     padding: 0 0 20px 0;
     border: 14px solid #1F1F1F;
@@ -40,12 +41,15 @@ span {
 }
 
 .inner__top {
+    position: absolute;
     display: flex;
     width: 130px;
     height: 18px;
     background-color: #1F1F1F;
-    border-radius: 0px 0px 11px 11px;
+    border-radius: 0 0 11px 11px;
     margin: 0 auto;
+    top: -10px;
+    left: 100px;
 }
 
 .inner__info {
@@ -112,7 +116,7 @@ span {
     border: 1px solid #DADADA;
     background-color: #f3f2f2;
     cursor: pointer;
-    transition: all .4s ease;
+    transition: all .4s;
 }
 
 .form__span__controller {
@@ -125,5 +129,5 @@ span {
     border: 1px solid #DADADA;
     border-radius: 20px;
     cursor: pointer;
-    transition: all .4s ease;
+    transition: all .4s;
 }
